@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+<script>
+    var nome = [];
+    var nomedel = [];  
+function confirmarInput() {
+  
+  fname = document.getElementById("fname").value;
+  nome.push(fname);
+  console.log(nome);
+}
+
+function deleteName(){
+    dname = document.getElementById("dname").value;
+    nome.pop(dname);
+    console.log(nome);
+    
+}
+
+
+</script>
+</head>
+<body>
+  Adicione o nome: <input id="fname" type="text" size="20">
+  <input type="button" onclick="confirmarInput()">
+
+  Delete o nome: <input id="dname" type="text" size="20">
+  <input type="button" onclick="deleteName()">
+</body>
+</html>
+           
